@@ -12,36 +12,21 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-		// CategorySeeder
-		DB::table('categories')->insert([
-	        'name' => 'Makanan',
-		]); 
-		DB::table('categories')->insert([
-	        'name' => 'Minuman',
-		]); 
-		DB::table('categories')->insert([
-	        'name' => 'Elektronik',
-		]); 
-		DB::table('categories')->insert([
-	        'name' => 'Rumah Tangga',
-		]); 
-		DB::table('categories')->insert([
-	        'name' => 'Fashion',
-		]); 
-		DB::table('categories')->insert([
-	        'name' => 'Buku',
-		]); 
-		DB::table('categories')->insert([
-	        'name' => 'Games',
-		]); 
+		
+		$this->call(CategorySeeder::class);
+		$this->call(SmartphoneSeeder::class);
+		$this->call(KulkasSeeder::class);
+		$this->call(MesinCuciSeeder::class);
 
-		$faker = Faker::create('id_ID');
+
+
+		// $faker = Faker::create('id_ID');
 		// ProductSeeder
-		for($i = 1; $i <= 50; $i++){
-    		DB::table('products')->insert([
-		        'name' => $faker->company,
-		        'categories_id' => $faker->numberBetween(1,7),
-    		]);
-    	}
+		// for($i = 1; $i <= 50; $i++){
+    // 		DB::table('products')->insert([
+		//         'name' => $faker->company,
+		//         'categories_id' => $faker->numberBetween(1,7),
+    // 		]);
+    // 	}
     }
 }

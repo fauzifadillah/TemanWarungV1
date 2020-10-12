@@ -17,7 +17,7 @@ class CreateOrdersTable extends Migration
             $table->bigIncrements('id');
             $table->integer('products_id')->unsigned();
             $table->string('name');
-            $table->string('phone-number');
+            $table->string('phone_number');
             $table->integer('installment');
             $table->timestamps();
             $table->foreign('products_id')->references('id')->on('products')
