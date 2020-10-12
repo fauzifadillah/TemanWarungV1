@@ -26,7 +26,7 @@
 </div>
 <div class="modal-footer">
     <button type="button" class="btn btn-light" data-dismiss="modal" id="modal-close">Cancel</button>
-    <button type="submit" class="btn btn-primary" id="modal-save">Beli via WhatsApp</button>
+    <button type="submit" class="btn btn-success" id="modal-save">Beli via WhatsApp</button>
 </div>
 
 </form>

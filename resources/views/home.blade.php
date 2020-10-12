@@ -134,8 +134,7 @@
                   position: 'top-end',
                   showConfirmButton: false,
                   timer: 3000,
-                  timerProgressBar: true,
-                  background: '#BD362F',
+                  background: '#28A746',
                   onOpen: (toast) => {
                     toast.addEventListener('mouseenter', Swal.stopTimer)
                     toast.addEventListener('mouseleave', Swal.resumeTimer)
@@ -143,14 +142,22 @@
                 })
                 Toast.fire({
                   type: 'success',
-                  text: 'Data has been deleted'
+                  text: 'Sukses!'
                 })
+                // TO BE DETERMINED --OJOY
+                $.ajax('http://api.whatsapp.com/send?phone='+ me, {
+                    data: JSON.stringify({
+              
+                    }),
+                    contentType: 'application/json',
+                    type: 'POST'
+                  });
               },
               error: function(xhr){
                 swal({
                   type: 'error',
                   title: 'Oops...',
-                  text: 'Something went wrong!'
+                  text: 'Maaf sistem dalam perbaikan'
                 });
               }
             });
