@@ -17,6 +17,12 @@ class DatabaseSeeder extends Seeder
 		$this->call(SmartphoneSeeder::class);
 		$this->call(KulkasSeeder::class);
 		$this->call(MesinCuciSeeder::class);
+    $this->call(TvSeeder::class);
+    $this->call(SpeakerSeeder::class);
+    $this->call(BlenderSeeder::class);
+    $this->call(KipasAnginSeeder::class);
+
+
 
 
 
