@@ -1,5 +1,5 @@
 <form class="form" method="POST" action="{{ route('confirm') }}" id="{{ $model->name }}">
-@csrf
+{{ csrf_field() }} {{ method_field('POST') }}
 
 <div class="modal-header">
     <h5 class="modal-title" id="modal-title">Beli {{$model->name}}</h5>

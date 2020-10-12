@@ -93,15 +93,19 @@
   $('body').on('submit','.form', function(event){
     event.preventDefault();
 
-    var form = $('.form'),
+    var me = this,
+        form = $('.form'),
         url = form.attr('action'),
         method = form.attr('method'),
         name = form.attr('id');
 
     $.ajax({
       url : url,
-      method : method,
-      data : form.serialize(),
+      type : "POST",
+      data: new FormData(me),
+      dataType: 'JSON',
+      contentType: false,
+      processData: false,
       success: function(response){
         $('#modal').modal('hide');
 
@@ -117,8 +121,11 @@
           if(result.value){
             $.ajax({
               url: '{{ route('save') }}',
-              method : method,
-              data: form.serialize(),
+              type : "POST",
+              data: new FormData(me),
+              dataType: 'JSON',
+              contentType: false,
+              processData: false,
               success: function(response){
                 const Toast = Swal.mixin({
                   toast: true,

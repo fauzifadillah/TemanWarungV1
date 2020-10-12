@@ -51,7 +51,7 @@ class HomeController extends Controller
             'phone_number' => ['required'],
             'installment' => ['required']
         ]);
-        return $request;
+        return response()->json($request);
     }
     public function save(Request $request)
     {
@@ -61,7 +61,7 @@ class HomeController extends Controller
             'phone_number' => $request->phone_number,
             'installment' => $request->installment
         ]);
-        return json_encode($model);
+        return response()->json($model);
     }
 
 }
