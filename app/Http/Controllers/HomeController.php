@@ -32,10 +32,11 @@ class HomeController extends Controller
 		foreach($model as $a){
 			$table .= '<tr><td><img src="'.asset($a->image).'" width="20" height="20"/></td>';
 			$table .= '<td>'.$a->name.'</td>';
-			$table .= '<td>harga</td>';
-			$table .= '<td>sort desc</td>';
-			$table .= '<td><a href="'.route('product',$a->id).'" class="btn btn-danger btn-sm modal-show">show</a></td></tr>';
-		}
+			$table .= '<td>Rp'.$a->price.'</td>';
+			$table .= '<td>'.$a->desc.'</td>';
+			$table .= '<td><a href="'.route('product',$a->id).'" class="btn btn-success btn-sm modal-show">Beli</a></td></tr>';
+        }
+        // dd($a);
 		$table .= '</table></div></td></tr>';
         return $table;
     }

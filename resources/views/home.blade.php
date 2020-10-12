@@ -110,13 +110,15 @@
         $('#modal').modal('hide');
 
         swal({
-          title: "Are you sure want to buy '"+name+"'?",
-          text: "You won't be able to revert this!",
+          title: "Apakah kamu yakin ingin membeli '"+name+"'?",
+          text: "Setelah ini kamu akan kembali ke WhatsApp TemanWarung",
           type: 'warning',
           showCancelButton: true,
           confirmButtonColor: '#3085d6',
           cancelButtonColor: '#d33',
-          confirmButtonText: 'Yes, buy it!'
+          confirmButtonText: 'OK, saya yakin!',
+          cancelButtonText: 'Gak jadi!'
+
         }).then((result)=>{
           if(result.value){
             $.ajax({
