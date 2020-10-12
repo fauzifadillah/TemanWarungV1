@@ -13,46 +13,60 @@ class CategorySeeder extends Seeder
     {
         // CategorySeeder
 		DB::table('categories')->insert([
-	        'name' => 'SMARTPHONE',
+					'name' => 'SMARTPHONE',
+					'image' => '/katalog/smartphone.png'
 		]); 
 		DB::table('categories')->insert([
 	        'name' => 'KULKAS',
-        ]); 
-        DB::table('categories')->insert([
+					'image' => '/katalog/kulkas.png'
+		]); 
+    DB::table('categories')->insert([
 	        'name' => 'MESIN CUCI',
+					'image' => '/katalog/mesincuci.png'
 		]); 
 		DB::table('categories')->insert([
 	        'name' => 'BLENDER',
+					'image' => '/katalog/blender.png'
 		]); 
 		DB::table('categories')->insert([
 	        'name' => 'KIPAS ANGIN',
+					'image' => '/katalog/kipasangin.png'
 		]); 
 		DB::table('categories')->insert([
 	        'name' => 'TV',
+					'image' => '/katalog/tv.png'
 		]); 
 		DB::table('categories')->insert([
 	        'name' => 'SPEAKER',
+					'image' => '/katalog/speaker.png'
 		]); 
 		DB::table('categories')->insert([
 	        'name' => 'DISPENSER',
+					'image' => '/katalog/dispenser.png'
 		]); 
 		DB::table('categories')->insert([
-		    'name' => 'GAS',
+		    	'name' => 'GAS',
+					'image' => '/katalog/gas.png'
 		]); 
 		DB::table('categories')->insert([
-		    'name' => 'FURNITUR',
+		    	'name' => 'FURNITUR',
+					'image' => '/katalog/furnitur.png'
 		]); 
 		DB::table('categories')->insert([
-		    'name' => 'RICE COOKER',
+		    	'name' => 'RICE COOKER',
+					'image' => '/katalog/rice_cooker.png'
 		]); 
 		DB::table('categories')->insert([
-		    'name' => 'PERABOT',
+		    	'name' => 'PERABOT',
+					'image' => '/katalog/perabot.png'
 		]); 
 		DB::table('categories')->insert([
-		    'name' => 'SETRIKA',
+		    	'name' => 'SETRIKA',
+					'image' => '/katalog/setrika.png'
 		]); 
 		DB::table('categories')->insert([
-		    'name' => 'LAPTOP/TABLET',
+		    	'name' => 'LAPTOP/TABLET',
+					'image' => '/katalog/laptop.png'
 		]); 
     }
 }
