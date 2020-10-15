@@ -19,9 +19,9 @@
     </div>
     <div class="form-group">
         <label for="" class="control-label">Banyak Cicilan</label><br>
-        <input type="radio" name="installment" value="3" checked> 3x &ensp;
-        <input type="radio" name="installment" value="6"> 6x &ensp;
-        <input type="radio" name="installment" value="12"> 12x
+        &ensp; <input type="radio" name="installment" value="3" checked> &ensp; 3x: &ensp;Rp {{ number_format($model->price3, 0, ',', '.') }}<br>
+        &ensp; <input type="radio" name="installment" value="6"> &ensp; 6x: &ensp;Rp {{ number_format($model->price6, 0, ',', '.') }}<br>
+        &ensp; <input type="radio" name="installment" value="12">&ensp;12x: &ensp;Rp {{ number_format($model->price12, 0, ',', '.') }}
     </div>
 </div>
 <div class="modal-footer">

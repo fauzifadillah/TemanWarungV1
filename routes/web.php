@@ -25,3 +25,14 @@ Route::prefix('product')->group(function(){
 	Route::delete('delete/{id}', 'ProductController@delete')->name('product.delete');
 	Route::get('datatable', 'ProductController@datatable')->name('product.data');
 });
+
+Route::prefix('order')->group(function(){
+	Route::get('/', 'OrderController@index')->name('order.index');
+	Route::get('create', 'OrderController@create')->name('order.create');
+	Route::post('store', 'OrderController@store')->name('order.store');
+	Route::get('edit/{id}', 'OrderController@edit')->name('order.edit');
+	Route::put('update/{id}', 'OrderController@update')->name('order.update');
+	Route::delete('delete/{id}', 'OrderController@delete')->name('order.delete');
+	Route::get('datatable', 'OrderController@datatable')->name('order.data');
+});
+

@@ -32,7 +32,7 @@ class HomeController extends Controller
 		foreach($model as $a){
 			$table .= '<tr><td><img src="'.asset($a->image).'" width="20" height="20"/></td>';
 			$table .= '<td>'.$a->name.'</td>';
-			$table .= '<td>Rp'.$a->price.'</td>';
+			$table .= '<td>Rp '.number_format($a->price, 0, ',', '.').'</td>';
 			$table .= '<td>'.$a->desc.'</td>';
 			$table .= '<td><a href="'.route('product',$a->id).'" class="btn btn-success btn-sm modal-show">Beli</a></td></tr>';
         }

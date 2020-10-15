@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="{{ asset('css/fontawesome.min.css') }}">
   <!-- Admin LTE -->
   <link rel="stylesheet" href="{{ asset('css/adminlte.css') }}">
+  <!-- OverlayScrollbars -->
+  <link rel="stylesheet" href="{{ asset('css/overlayscrollbars.min.css') }}">
   <!-- Data Tables -->
   <link rel="stylesheet" href="{{ asset('css/dataTables.bootstrap4.css') }}">
 </head>
@@ -30,10 +32,10 @@
     </nav>
 
     <!-- Main Sidebar Container -->
-    <aside class="main-sidebar sidebar-light-primary elevation-4">
+    <aside class="main-sidebar sidebar-light-danger elevation-4">
       <!-- Brand Logo -->
       <a class="brand-link">
-        <!-- <img src="{{ asset('finder.jpg') }}" class="brand-image img-circle elevation-3" style="font-size: 16px;"> -->
+        <!-- <img src="#" class="brand-image img-circle elevation-3" style="font-size: 16px;"> -->
         <span class="brand-text"><strong>DASHBOARD</strong></span>
       </a>
 
@@ -52,9 +54,9 @@
                 </p>
               </a>
             </li>
-            <li class="nav-item">
+<!--             <li class="nav-item">
               <a href="{{ route('category.index') }}" class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}">
-                <i class="nav-icon fas fa-box-open"></i>
+                <i class="nav-icon fas fa-home"></i>
                 <p>
                   Category
                 </p>
@@ -62,20 +64,12 @@
             </li>
             <li class="nav-item">
               <a href="{{ route('product.index') }}" class="nav-link {{ (request()->is('product*')) ? 'active' : '' }}">
-                <i class="nav-icon fas fa-tshirt"></i>
+                <i class="nav-icon fas fa-home"></i>
                 <p>
                   Product
                 </p>
               </a>
-            </li>
-            <li class="nav-item">
-              <a href="{{ route('order.index') }}" class="nav-link {{ (request()->is('order*')) ? 'active' : '' }}">
-                <i class="nav-icon fas fa-shopping-cart"></i>
-                <p>
-                  Order
-                </p>
-              </a>
-            </li>
+            </li> -->
           </ul>
         </nav>
       </div>
@@ -87,7 +81,18 @@
       <section class="content" >
         <div class="container-fluid" id="content">
           <!-- Small boxes (Stat box) -->
-          @yield('content')
+          <div class="row" style="padding-top:15px;">
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="mb-3"><strong>Product</strong>
+                    <a href="{{ route('product.create') }}" class="btn btn-primary float-right btn-sm modal-show" name="Add Product"><i class="nav-icon fas fa-plus"></i> Add New</a>
+                  </h3>
+                  <table id="table" class="table table-striped table-bordered text-sm" style="width:100%"></table>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- /.row (main row) -->
         </div><!-- /.container-fluid -->
       </section>
@@ -114,6 +119,8 @@
 <!-- Bootstrap 4 -->
 <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
 <!-- OverlayScrollbars -->
+<script src="{{ asset('js/jquery.overlayScrollbars.js') }}"></script>
+<!-- AdminLTE App -->
 <script src="{{ asset('js/adminlte.js') }}"></script>
 <!-- Sweet Alert 2 -->
 <script src="{{ asset('js/sweetalert2.all.js') }}"></script>

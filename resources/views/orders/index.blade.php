@@ -1,14 +1,14 @@
 @extends('layouts.index')
 
-@section('title', 'Product')
+@section('title', 'Order')
 
 @section('content')
 <div class="row" style="padding-top:15px;">
   <div class="col-lg-12">
     <div class="card">
       <div class="card-body">
-        <h3 class="mb-3"><strong>Product</strong>
-          <a href="{{ route('product.create') }}" class="btn btn-primary float-right btn-sm modal-show" name="Add Product"><i class="nav-icon fas fa-plus"></i> Add New</a>
+        <h3 class="mb-3"><strong>Order</strong>
+          <!-- <a href="{{ route('order.create') }}" class="btn btn-primary float-right btn-sm modal-show" name="Add Product"><i class="nav-icon fas fa-plus"></i> Add New</a> -->
         </h3>
         <table id="table" class="table table-striped table-bordered text-sm" style="width:100%"></table>
       </div>
@@ -22,15 +22,16 @@
   $('#table').DataTable({
     responsive: true,
     serverSide: true,
-    ajax: "{{ route('product.data') }}",
+    ajax: "{{ route('order.data') }}",
     order: [[ 1, "asc" ]],
     columns: [
-      {title: 'No', data: 'DT_RowIndex', name: 'no', orderable:false, width: '5%', className: 'dt-center'},
-      {title: 'Nama', data: 'name', name: 'name', width: '20%', className: 'dt-head-center'},
-      {title: 'Category', data: 'categories_id', name: 'categories_id', width: '20%', className: 'dt-head-center'},
-      {title: 'Photo', data: 'image', name: 'image', width: '20%', className: 'dt-head-center'},
+      {title: 'No', data: 'DT_RowIndex', name: 'no', orderable:false, width: '7.5%', className: 'dt-center'},
+      {title: 'Nama', data: 'name', name: 'name', width: '25%', className: 'dt-head-center'},
+      {title: 'No Telp', data: 'phone_number', name: 'phone_number', width: '15%', className: 'dt-head-center'},
+      {title: 'Product', data: 'product', name: 'product', width: '25%', className: 'dt-head-center'},
+      {title: 'Cicilan', data: 'installment', name: 'installment', width: '12.5%', className: 'dt-center'},
       {title: 'Harga', data: 'price', name: 'price', width: '15%', className: 'dt-center'},
-      {title: 'Opsi', data: 'action', name: 'action', orderable:false, width: '7.5%', className: 'dt-center'}
+      // {title: 'Opsi', data: 'action', name: 'action', orderable:false, width: '7.5%', className: 'dt-center'}
     ],
   });
 
