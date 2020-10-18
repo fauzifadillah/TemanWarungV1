@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
     $this->call(SpeakerSeeder::class);
     $this->call(BlenderSeeder::class);
     $this->call(KipasAnginSeeder::class);
+    $this->call(KomporGasSeeder::class);
 
 
 

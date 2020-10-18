@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>TemanWarung</title>
+  <title>TemanWarung V1.0</title>
   <link rel="icon" href="{{ asset('/tw.png') }}">
 
   <!-- Tell the browser to be responsive to screen width -->
@@ -145,7 +145,11 @@
                   text: 'Sukses!'
                 })
                 // TO BE DETERMINED --OJOY
-                $.ajax('http://api.whatsapp.com/send?phone='+ me, {
+                $.ajax('https://api.whatsapp.com/send?phone=6281312630599', {
+                        "headers": {
+                        "accept": "application/json",
+                        "Access-Control-Allow-Origin":"*"
+                    },
                     data: JSON.stringify({
               
                     }),
