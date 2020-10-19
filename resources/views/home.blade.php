@@ -98,11 +98,6 @@
         url = form.attr('action'),
         method = form.attr('method'),
         name = form.attr('id');
-        nama_user = $('#name').val();
-        ph = $('#phone_number').val();
-        installment = $('input[type=radio]:checked').val();
-        
-        
 
     $.ajax({
       url : url,
@@ -149,8 +144,8 @@
                   type: 'success',
                   text: 'Sukses!'
                 })
-                console.log(nama_user);
-                href='https://api.whatsapp.com/send?phone=6281312630599&text=Halo%20saya%20mau%20order%20'+ph;
+                // console.log(response);
+                href='https://api.whatsapp.com/send?phone=6281312630599&text='+response;
                 window.location=href;
                 // TO BE DETERMINED --OJOY
                 $.ajax('https://api.whatsapp.com/send?phone=6281312630599', {

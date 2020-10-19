@@ -62,7 +62,18 @@ class HomeController extends Controller
             'phone_number' => $request->phone_number,
             'installment' => $request->installment
         ]);
-        return response()->json($model);
+        $product = Product::find($model->products_id);
+        if($model->installment==3){
+            $price = 'Rp '.number_format($product->price3, 0, ',', '.');
+        }
+        else if($model->installment==6){
+            $price = 'Rp '.number_format($product->price6, 0, ',', '.');
+        }
+        else if($model->installment==12){
+            $price = 'Rp '.number_format($product->price12, 0, ',', '.');
+        }
+        $whatsapp = 'Halo%20saya%20'.$model->name.'%20dengan%20nomor%20telepon%20'.$model->phone_number.'.%0A%0ASaya%20mau%20order%20'.$product->name.'%20dengan%20cicilan%20sebanyak%20'.$model->installment.'x%20seharga%20'.$price.'.';
+        return json_encode($whatsapp);
     }
 
 }
