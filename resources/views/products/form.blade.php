@@ -26,6 +26,22 @@
         <input id="name" type="text" class="form-control" name="name" value="{{$model->name}}" required>
     </div>
     <div class="form-group">
+        <label for="" class="control-label">Harga</label>
+        <input id="name" type="text" class="form-control" name="name" value="{{$model->price}}" required>
+    </div>
+    <div class="form-group">
+        <label for="" class="control-label">Cicilan 3x</label>
+        <input id="name" type="text" class="form-control" name="name" value="{{$model->price3}}" required>
+    </div>
+    <div class="form-group">
+        <label for="" class="control-label">Cicilan 6x</label>
+        <input id="name" type="text" class="form-control" name="name" value="{{$model->price6}}" required>
+    </div>
+    <div class="form-group">
+        <label for="" class="control-label">Cicilan 12x</label>
+        <input id="name" type="text" class="form-control" name="name" value="{{$model->price12}}" required>
+    </div>
+    <div class="form-group">
         <label for="" class="control-label">Image Product</label>
         <input id="image" type="file" name="image">
     </div>

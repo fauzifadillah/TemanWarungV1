@@ -90,6 +90,18 @@ class ProductController extends Controller
             ->editColumn('categories_id', function($model){
                 return $model->categories->name;
             })
+            ->editColumn('price', function($model){
+                return 'Rp '.number_format($model->price, 0, ',', '.');
+            })
+            ->editColumn('price3', function($model){
+                return 'Rp '.number_format($model->price3, 0, ',', '.');
+            })
+            ->editColumn('price6', function($model){
+                return 'Rp '.number_format($model->price6, 0, ',', '.');
+            })
+            ->editColumn('price12', function($model){
+                return 'Rp '.number_format($model->price12, 0, ',', '.');
+            })
             ->editColumn('image', function($model){
                 if ($model->image == NULL){
                     return 'No Image';

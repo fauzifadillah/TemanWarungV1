@@ -19,7 +19,7 @@
 
 @push('scripts')
 <script>
-  $('#table').DataTable({
+  var detail = $('#table').DataTable({
     responsive: true,
     serverSide: true,
     ajax: "{{ route('product.data') }}",
@@ -32,6 +32,39 @@
       {title: 'Harga', data: 'price', name: 'price', width: '15%', className: 'dt-center'},
       {title: 'Opsi', data: 'action', name: 'action', orderable:false, width: '7.5%', className: 'dt-center'}
     ],
+  });
+
+  function format (d) {
+    return '<table>'+
+        '<tr >'+
+            '<td>Harga Cicilan 3x:</td>'+
+            '<td>'+d.price3+'</td>'+
+        '</tr>'+
+        '<tr>'+
+            '<td>Harga Cicilan 6x:</td>'+
+            '<td>'+d.price6+'</td>'+
+        '</tr>'+
+        '<tr>'+
+            '<td>Harga Cicilan 12x:</td>'+
+            '<td>'+d.price12+'</td>'+
+        '</tr>'+
+    '</table>';
+  };
+
+
+  $('#table tbody').on('click', '.details-control', function () {
+    event.preventDefault();
+    var tr = $(this).closest('tr');
+    var row = detail.row( tr );
+
+    if ( row.child.isShown() ) {
+        row.child.hide();
+        tr.removeClass('shown');
+    }
+    else {
+        row.child( format(row.data()) ).show();
+        tr.addClass('shown');
+    }
   });
 
   $('body').on('click', '.modal-show', function(event){

@@ -114,7 +114,7 @@
 <!-- Bootstrap 4 -->
 <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
 <!-- OverlayScrollbars -->
-<script src="{{ asset('js/adminlte.js') }}"></script>
+<!-- <script src="{{ asset('js/adminlte.js') }}"></script> -->
 <!-- Sweet Alert 2 -->
 <script src="{{ asset('js/sweetalert2.all.js') }}"></script>
 @include('layouts.modal')
