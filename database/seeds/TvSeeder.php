@@ -15,6 +15,7 @@ class TvSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Changhong 2463 24 inch',
             'categories_id' => 6,
+            'image' => '/katalog/tv/Changhong-2463-24-inch .jpeg',
             'price' => 210000+1099000,
             'price3' => 436333,
             'price6'=> 218167,
@@ -23,6 +24,7 @@ class TvSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Polytron 20D 22 inch',
             'categories_id' => 6,
+            'image' => '/katalog/tv/Polytron-20D-22-inch.jpg',
             'price' => 210000+1195000,
             'price3' => 468333,
             'price6'=> 234167,
@@ -31,6 +33,7 @@ class TvSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'TCL 24D 310 24 inch',
             'categories_id' => 6,
+            'image' => '/katalog/tv/TCL-24D-310-24-inch.jpeg',
             'price' => 210000+1205000,
             'price3' => 471667,
             'price6'=> 235833,
@@ -39,6 +42,7 @@ class TvSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Polytron 24T8511 24 inch',
             'categories_id' => 6,
+            'image' => '/katalog/tv/Polytron-24T8511-24-inch.png',
             'price' => 210000+1415000,
             'price3' => 541667,
             'price6'=> 270833,
@@ -47,6 +51,7 @@ class TvSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'AQUA 32AQT6100 32 inch',
             'categories_id' => 6,
+            'image' => '/katalog/tv/AQUA-32AQT6100-32-inch.jpeg',
             'price' => 210000+1499000,
             'price3' => 569667,
             'price6'=> 284833,
@@ -55,6 +60,7 @@ class TvSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Changhong 3263 32 inch',
             'categories_id' => 6,
+            'image' => '/katalog/tv/Changhong-3263-32-inch.jpeg',
             'price' => 210000+1575000,
             'price3' => 595000,
             'price6'=> 297500,
@@ -63,6 +69,7 @@ class TvSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'TCL 32D310 32 inch',
             'categories_id' => 6,
+            'image' => '/katalog/tv/TCL-32D310-32-inch.png',
             'price' => 210000+1625000,
             'price3' => 611667,
             'price6'=> 305833,
@@ -71,6 +78,7 @@ class TvSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'TCL 32D3000B 32 inch',
             'categories_id' => 6,
+            'image' => '/katalog/tv/TCL-32D3000B-32-inch.jpeg',
             'price' => 210000+1639000,
             'price3' => 616333,
             'price6'=> 308167,
@@ -79,6 +87,7 @@ class TvSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Samsung UA32N4001AK 32 inch',
             'categories_id' => 6,
+            'image' => '/katalog/tv/Samsung-UA32N4001AK-32-inch.jpeg',
             'price' => 210000+1825000,
             'price3' => 678333,
             'price6'=> 339167,
@@ -87,6 +96,7 @@ class TvSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Sharp 32c32b 32 inch',
             'categories_id' => 6,
+            'image' => '/katalog/tv/Sharp-32c32b-32-inch.jpeg',
             'price' => 210000+1890000,
             'price3' => 700000,
             'price6'=> 350000,
@@ -95,6 +105,7 @@ class TvSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'LG LK 500 32 inch',
             'categories_id' => 6,
+            'image' => '/katalog/tv/LG-LK-500-32-inch.jpeg',
             'price' => 210000+1925000,
             'price3' => 711667,
             'price6'=> 355833,
@@ -103,6 +114,7 @@ class TvSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'LG LM 550 32 inch',
             'categories_id' => 6,
+            'image' => '/katalog/tv/LG-LM-550-32-inch.jpg',
             'price' => 210000+1925000,
             'price3' => 711667,
             'price6'=> 355833,
@@ -111,6 +123,7 @@ class TvSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Xiaomi Mi 4A 32 inch',
             'categories_id' => 6,
+            'image' => '/katalog/tv/Xiaomi-Mi-4A-32-inch.jpg',
             'price' => 210000+1999000,
             'price3' => 736333,
             'price6'=> 368167,
