@@ -21,6 +21,10 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{ asset('css/fontawesome.min.css') }}">
   <link rel="stylesheet" href="{{ asset('css/fontawesome.css') }}">
+<!-- MODAL GAMBAR -->
+<script src="{{ asset('js/fbox-jquery.min.js') }}"></script>
+<link rel="stylesheet" href="{{ asset('css/jquery.fancybox.min.css') }}" />
+<script src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
 </head>
     
 <!-- {{-- Header --}}
