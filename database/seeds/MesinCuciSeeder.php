@@ -15,6 +15,7 @@ class MesinCuciSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Polytron 2 Tabung 7366',
             'categories_id' => 3,
+            'image' => '/katalog/mesin-cuci/polytron_2_tabung_7366.jpeg',
             'price' => 210000+1185000,
             'price3' =>465000,
             'price6' =>232500,
@@ -23,6 +24,7 @@ class MesinCuciSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'AQUA Sanyo QW 780 - XT',
             'categories_id' => 3,
+            'image' => '/katalog/mesin-cuci/aqua_sanyo_qw_780_xt.jpeg',
             'price' => 210000+1220000,
             'price3' =>476667,
             'price6' =>238333,
@@ -31,6 +33,7 @@ class MesinCuciSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'AQUA QW 751XT',
             'categories_id' => 3,
+            'image' => '/katalog/mesin-cuci/aqua_qw_751xt.jpeg',
             'price' => 210000+1260000,
             'price3' =>490000,
             'price6' =>245000,
@@ -39,6 +42,7 @@ class MesinCuciSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'AQUA QW 880XT',
             'categories_id' => 3,
+            'image' => '/katalog/mesin-cuci/aqua_qw_880xt.jpeg',
             'price' => 210000+1369000,
             'price3' =>526333,
             'price6' =>263167,
@@ -47,6 +51,7 @@ class MesinCuciSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'AQUA QW 950XT',
             'categories_id' => 3,
+            'image' => '/katalog/mesin-cuci/aqua_qw_950xt.jpeg',
             'price' => 210000+1499000,
             'price3' =>569667,
             'price6' =>284833,
@@ -55,6 +60,7 @@ class MesinCuciSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Polytron PWM 9366',
             'categories_id' => 3,
+            'image' => '/katalog/mesin-cuci/polytron_pwm_9366.jpeg',
             'price' => 210000+1500000,
             'price3' =>570000,
             'price6' =>285000,
@@ -63,6 +69,7 @@ class MesinCuciSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Sharp Est 80MW',
             'categories_id' => 3,
+            'image' => '/katalog/mesin-cuci/sharp_est_80mw.jpg',
             'price' => 210000+1650000,
             'price3' =>620000,
             'price6' =>310000,
@@ -71,6 +78,7 @@ class MesinCuciSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'AQUA QW 1050XT',
             'categories_id' => 3,
+            'image' => '/katalog/mesin-cuci/aqua_qw_1050xt.jpeg',
             'price' => 210000+1749000,
             'price3' =>653000,
             'price6' =>326500,
@@ -79,6 +87,7 @@ class MesinCuciSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'AQUA 78DD',
             'categories_id' => 3,
+            'image' => '/katalog/mesin-cuci/aqua_78dd.jpeg',
             'price' => 210000+1965000,
             'price3' =>725000,
             'price6' =>362500,
@@ -87,6 +96,7 @@ class MesinCuciSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'AQUA QW 1250XT',
             'categories_id' => 3,
+            'image' => '/katalog/mesin-cuci/aqua_qw_1250xt.jpeg',
             'price' => 210000+2039000,
             'price3' =>749667,
             'price6' =>374833,
@@ -95,6 +105,7 @@ class MesinCuciSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'AQUA 88DD',
             'categories_id' => 3,
+            'image' => '/katalog/mesin-cuci/aqua_88dd.jpeg',
             'price' => 210000+2150000,
             'price3' =>786667,
             'price6' =>393333,
@@ -103,6 +114,7 @@ class MesinCuciSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Polytron PWM 1401',
             'categories_id' => 3,
+            'image' => '/katalog/mesin-cuci/polytron_pwm_1401.jpeg',
             'price' => 210000+2220000,
             'price3' =>810000,
             'price6' =>405000,
@@ -111,6 +123,7 @@ class MesinCuciSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'AQUA 98DD',
             'categories_id' => 3,
+            'image' => '/katalog/mesin-cuci/aqua_98dd.jpeg',
             'price' => 210000+2350000,
             'price3' =>853333,
             'price6' =>426667,
@@ -119,6 +132,7 @@ class MesinCuciSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'LG WP 905 R',
             'categories_id' => 3,
+            'image' => '/katalog/mesin-cuci/lg_wp_905_r.jpg',
             'price' => 210000+2400000,
             'price3' =>870000,
             'price6' =>435000,
@@ -127,6 +141,7 @@ class MesinCuciSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Samsung WA 70h4000 SG',
             'categories_id' => 3,
+            'image' => '/katalog/mesin-cuci/samsung_wa_70h4000_sg.jpeg',
             'price' => 210000+2430000,
             'price3' =>880000,
             'price6' =>440000,

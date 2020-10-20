@@ -14,6 +14,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Changhong CBC50',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/changhong_cbc50.jpeg',
             'price' => 210000+1150000,
             'price3' =>453333,
             'price6' =>226667,
@@ -22,6 +23,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Changhong CBC 100',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/changhong_cbc100.jpeg',
             'price' => 210000+1325000,
             'price3' =>511667,
             'price6' =>255833,
@@ -30,6 +32,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Polytron PRB 158',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/polytron_prb_158.jpeg',
             'price' => 210000+1600000,
             'price3' =>603333,
             'price6' =>301667,
@@ -38,6 +41,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Sharp SJ-N162D',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/sharp_sj_n162d.jpeg',
             'price' => 210000+1600000,
             'price3' =>603333,
             'price6' =>301667,
@@ -46,6 +50,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Polytron PRB 178',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/polytron_prb_178.jpeg',
             'price' => 210000+1700000,
             'price3' =>636667,
             'price6' =>318333,
@@ -54,6 +59,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Polytron PRB 188',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/polytron_prb_188.jpeg',
             'price' => 210000+1785000,
             'price3' =>665000,
             'price6' =>332500,
@@ -62,6 +68,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Polytron PRA17GO',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/polytron_pra_17go.jpg',
             'price' => 210000+1845000,
             'price3' =>685000,
             'price6' =>342500,
@@ -70,6 +77,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Polytron PRA 18 BNR',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/polytron_pra_18bnrb.jpg',
             'price' => 210000+1925000,
             'price3' =>711667,
             'price6' =>355833,
@@ -78,6 +86,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Polytron PRA 18 HO',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/polytron_pra_18_ho.jpeg',
             'price' => 210000+1950000,
             'price3' =>720000,
             'price6' =>360000,
@@ -86,6 +95,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Panasonic 19 ANHV',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/panasonic_19_an_hv.jpeg',
             'price' => 210000+1975000,
             'price3' =>728333,
             'price6' =>364167,
@@ -94,6 +104,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'LG GN-210CK',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/lg_gn_210ck.jpeg',
             'price' => 210000+2145000,
             'price3' =>785000,
             'price6' =>392500,
@@ -102,6 +113,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'AQUA AQR D 261',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/aqua_aqr_d_261.jpeg',
             'price' => 210000+2525000,
             'price3' =>911667,
             'price6' =>455833,
@@ -110,6 +122,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'TCL TCF-200CJ',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/tcl_tcf_200_cj.jpeg',
             'price' => 210000+2530000,
             'price3' =>913333,
             'price6' =>456667,
@@ -118,6 +131,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Sharp SJ-197 ND',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/sharp_sj_197_nd.jpeg',
             'price' => 210000+2550000,
             'price3' =>920000,
             'price6' =>460000,
@@ -126,6 +140,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'AQUA AQRD 270',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/aqua_aqrd_270.png',
             'price' => 210000+2699000,
             'price3' =>969667,
             'price6' =>484833,
@@ -134,6 +149,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Sharp SJ 237MD',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/sharp_sj_237_md.jpeg',
             'price' => 210000+2750000,
             'price3' =>986667,
             'price6' =>493333,
@@ -142,6 +158,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'LG  195 SQMT 2',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/lg_195_sqmt_2.jpeg',
             'price' => 210000+3150000,
             'price3' =>1120000,
             'price6' =>560000,
@@ -150,6 +167,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Sharp SJ-316MG',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/sharp_sj_316_mg.jpeg',
             'price' => 210000+3225000,
             'price3' =>1145000,
             'price6' =>572500,
@@ -158,6 +176,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'LG GN-B2155QMT',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/lg_gn_b_2155_qmt.jpeg',
             'price' => 210000+3450000,
             'price3' =>1220000,
             'price6' =>610000,
@@ -166,6 +185,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'LG GN-B215 SQMT',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/lg_gn_b_2155_qmt.jpeg',
             'price' => 210000+3450000,
             'price3' =>1220000,
             'price6' =>610000,
@@ -174,6 +194,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'GEA AB 106 R ',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/gea_ab_226_r.jpg',
             'price' => 210000+2150000,
             'price3' =>786667,
             'price6' =>393333,
@@ -182,6 +203,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'RSA XS-100',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/rsa_xs_110.jpg',
             'price' => 210000+2238500,
             'price3' =>816167,
             'price6' =>408083,
@@ -190,6 +212,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'RSA  CF 220',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/rsa_cf_220.jpeg',
             'price' => 210000+2545000,
             'price3' =>918333,
             'price6' =>459167,
@@ -198,6 +221,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'GEA AB 226 R',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/gea_ab_226_r.jpg',
             'price' => 210000+2900000,
             'price3' =>1036667,
             'price6' =>518333,
@@ -206,6 +230,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'STEKO MG-220',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/steko_mg_220.jpeg',
             'price' => 210000+2730000,
             'price3' =>980000,
             'price6' =>490000,
@@ -214,6 +239,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'STEKO MG-300',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/steko_mg_300.jpeg',
             'price' => 210000+3175000,
             'price3' =>1128333,
             'price6' =>564167,
@@ -222,6 +248,7 @@ class KulkasSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Polytron SCN 230',
             'categories_id' => 2,
+            'image' => '/katalog/kulkas/polytron_scn_230.jpg',
             'price' => 210000+3175000,
             'price3' =>1128333,
             'price6' =>564167,

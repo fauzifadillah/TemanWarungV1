@@ -15,12 +15,14 @@ class SmartphoneSeeder extends Seeder
 		DB::table('products')->insert([
             'name' => 'OPPO A37 2/16GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/oppo_a37.jpeg',
             'price' =>175000+ 843000,
             'price3' =>163833
         ]); 
         DB::table('products')->insert([
             'name' => 'OPPO F1S 3/32GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/oppo_f1s.png',
             'price' =>210000+ 1165000,
             'price3' =>458333,
             'price6' =>229167,
@@ -29,6 +31,7 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'OPPO F1S 4/32GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/oppo_f1s.png',
             'price' =>210000+ 1235000,
             'price3' =>481667,
             'price6' =>240833,
@@ -37,6 +40,7 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Xiaomi Redmi 9 3/32GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/redmi_9.jpeg',
             'price' =>210000+ 1755000,
             'price3' =>655000,
             'price6' =>327500,
@@ -45,12 +49,14 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Xiaomi Redmi 2 1/ 8GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/redmi_2.jpg',
             'price' =>175000+ 469000,
             'price3' =>203000,
         ]); 
         DB::table('products')->insert([
             'name' => 'Xiaomi Redmi 9 4/64GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/redmi_9.jpeg',
             'price' =>210000+ 1975000,
             'price3' =>728333,
             'price6' =>364167,
@@ -59,6 +65,7 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Samsung Galaxy A01 1/16GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/galaxy_a01.jpeg',
             'price' =>175000+ 975000,
             'price3' =>371667,
             'price6' =>185833,
@@ -67,6 +74,7 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Samsung Galaxy A01 2/16GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/galaxy_a01.jpeg',
             'price' =>210000+ 1199000,
             'price3' =>469667,
             'price6' =>234833,
@@ -75,6 +83,7 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Samsung Galaxy A01 2/32GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/galaxy_a01.jpeg',
             'price' =>210000+ 1125000,
             'price3' =>445000,
             'price6' =>222500,
@@ -83,6 +92,7 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Samsung Galaxy A01S 2/32GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/galaxy_a01.jpeg',
             'price' =>210000+ 1480000,
             'price3' =>563333,
             'price6' =>281667,
@@ -91,6 +101,7 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Xiaomi Redmi 9A 2/32GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/redmi_9a.jpeg',
             'price' =>210000+ 1314000,
             'price3' =>508000,
             'price6' =>254000,
@@ -99,6 +110,7 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Xiaomi Redmi 9A 3/32GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/redmi_9a.jpeg',
             'price' =>210000+ 1465000,
             'price3' =>558333,
             'price6' =>279167,
@@ -107,6 +119,7 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Xiaomi Redmi 8A Pro 2/32GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/redmi_8a.jpeg',
             'price' =>210000+ 1775000,
             'price3' =>661667,
             'price6' =>330833,
@@ -115,6 +128,7 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Xiaomi Redmi 8A Pro 3/32GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/redmi_8a.jpeg',
             'price' =>210000+ 1575000,
             'price3' =>595000,
             'price6' =>297500,
@@ -123,6 +137,7 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Xiaomi Redmi 9C 3/32GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/redmi_9c.jpg',
             'price' =>210000+ 1575000,
             'price3' =>595000,
             'price6' =>297500,
@@ -131,6 +146,7 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Vivo Y91C 2/32GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/vivo_y91c.jpeg',
             'price' =>210000+ 1599000,
             'price3' =>603000,
             'price6' =>301500,
@@ -139,6 +155,7 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Realme C11 2/32GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/realme_c11.jpg',
             'price' =>210000+ 1599000,
             'price3' =>603000,
             'price6' =>301500,
@@ -147,6 +164,7 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Xiaomi  Redmi 9  3/32GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/redmi_9.jpeg',
             'price' =>210000+ 1775000,
             'price3' =>661667,
             'price6' =>330833,
@@ -155,6 +173,7 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Xiaomi  Redmi 9C 4/64GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/redmi_9c.jpg',
             'price' =>210000+ 1775000,
             'price3' =>661667,
             'price6' =>330833,
@@ -163,6 +182,7 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Vivo  Y12i 3/32GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/vivo_y12l.jpg',
             'price' =>210000+ 1798000,
             'price3' =>669333,
             'price6' =>334667,
@@ -171,6 +191,7 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Samsung Galaxy A11 3/32GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/galaxy_a11.jpeg',
             'price' =>210000+ 1799000,
             'price3' =>669667,
             'price6' =>334833,
@@ -179,6 +200,7 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Xiaomi Redmi 8 4/64GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/redmi_8.jpeg',
             'price' =>210000+ 1799000,
             'price3' =>669667,
             'price6' =>334833,
@@ -187,6 +209,7 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Samsung Galaxy M11 3/32GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/galaxy_m11.jpeg',
             'price' =>210000+ 1799000,
             'price3' =>669667,
             'price6' =>334833,
@@ -195,6 +218,7 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'OPPO A12 3/32GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/oppo_a12.jpeg',
             'price' =>210000+ 1899000,
             'price3' =>703000,
             'price6' =>351500,
@@ -203,6 +227,7 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Xiaomi Redmi 9 4/64GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/redmi_9.jpeg',
             'price' =>210000+ 1975000,
             'price3' =>728333,
             'price6' =>364167,
@@ -211,6 +236,7 @@ class SmartphoneSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Xiaomi Redmi Note 8 4/64GB',
             'categories_id' => 1,
+            'image' => '/katalog/smartphone/redmi_note_8.jpeg',
             'price' =>210000+ 2175000,
             'price3' =>795000,
             'price6' =>397500,

@@ -17,7 +17,7 @@ class HomeController extends Controller
 
     public function detail($id)
     {
-    	$model = Product::where('categories_id', $id)->get();
+    	$model = Product::where('categories_id', $id)->orderBy('price','ASC')->get();
     	$bagi = $id%3;
     	if($bagi==1){
     		$row=($id+2)/3;
