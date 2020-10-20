@@ -10,7 +10,7 @@
 }
 
 .border-temanwarung {
-  border-top: 3px solid #195ddd;
+  border-top: 3px solid #195ddd !important;
   border-radius: 10px;
 }
 
@@ -53,7 +53,7 @@
 
 .container-content {
   position: relative;
-  top: 75px;
+  /* top: 75px; */
 }
 
 .image-detail {

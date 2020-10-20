@@ -28,7 +28,7 @@ class HomeController extends Controller
     	elseif($bagi==0){
     		$row=$id/3;
     	}
-        $table = '<tr id="detail-product" class="row'.$row.' image'.$id.'"><td colspan="7"><div class="card-body border-temanwarung mt-4"><table width="100%">';
+        $table = '<tr id="detail-product" class="row'.$row.' image'.$id.'"><td colspan="7"><div class="card-body border-temanwarung mt-4"><table class="table-hover" width="100%">';
 		foreach($model as $a){
 			$table .= '<tr><td><img src="'.asset($a->image).'" width="20" height="20"/></td>';
 			$table .= '<td>'.Str::limit($a->name,25,$end='...').'</td>';

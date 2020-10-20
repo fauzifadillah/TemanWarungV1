@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="{{ asset('css/sweetalert2.css') }}">
 </head>
     
-{{-- Header --}}
+<!-- {{-- Header --}}
 <div class="row mx-0 header-section">
   {{-- Logo TemanWarung --}}
   <div class="col-auto logo-temanwarung">
@@ -30,7 +30,7 @@
     <b class="ml-4">#SelaluAdaTeman</b>
   </div>
 </div>
-{{-- End of Header --}}
+{{-- End of Header --}} -->
 
   <div class="container">
     <div class="row container-content">
