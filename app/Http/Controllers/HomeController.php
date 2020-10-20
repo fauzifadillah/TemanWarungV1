@@ -6,7 +6,7 @@ use App\Category;
 use App\Product;
 use App\Order;
 use Illuminate\Http\Request;
-
+use Str;
 class HomeController extends Controller
 {
     public function index()
@@ -31,7 +31,7 @@ class HomeController extends Controller
         $table = '<tr id="detail-product" class="row'.$row.' image'.$id.'"><td colspan="7"><div class="card-body border-temanwarung mt-4"><table width="100%">';
 		foreach($model as $a){
 			$table .= '<tr><td><img src="'.asset($a->image).'" width="20" height="20"/></td>';
-			$table .= '<td>'.$a->name.'</td>';
+			$table .= '<td>'.Str::limit($a->name,25,$end='...').'</td>';
 			$table .= '<td class="font-weight-bold">Rp '.number_format($a->price, 0, ',', '.').'</td>';
 			$table .= '<td>'.$a->desc.'</td>';
 			$table .= '<td><a href="'.route('product',$a->id).'" class="btn btn-primary-temanwarung btn-sm modal-show">Beli</a></td></tr>';
