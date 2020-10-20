@@ -77,13 +77,32 @@ td {
 
 .container-footer {
   margin-top: 50px;
+  padding: 75px 0px;
   background-image: linear-gradient(to bottom right, #195ddd, #5288f4);
+}
+
+.container-footer .fab {
+  font-size: 40px;
+  margin: 0 8px;
+  height: 40px;
+  /* width: 15px; */
+  color: #fff;
+  vertical-align: middle;
+}
+
+.container-footer .footer-term-condition {
+  color: #fff;
+}
+
+.container-footer .footer-copyright {
+  color: #e2e3e9;
 }
 
 @media only screen and (max-width: 768px) {
   .image-detail {
     padding: 10px;
   }
+
   td {
     padding: 10px;
   }
@@ -119,5 +138,23 @@ td {
   .page-title {
     width: 100px;
     padding-top: 30px;
+  }
+
+  .container-footer {
+    padding: 50px 0px;
+  }
+
+  .container-footer .fab {
+    font-size: 25px;
+    margin: 0 4px;
+    height: 25px;
+  }
+  
+  .container-footer .footer-term-condition {
+    font-size: 14px;
+  }
+  
+  .container-footer .footer-copyright {
+    font-size: 12px;
   }
 }

@@ -12,8 +12,8 @@
 
   <!-- {{-- CSRF TOKEN --}} -->
   <!-- <meta name="csrf-token" content="{{ csrf_token() }}"> -->
-{{-- CSS SORANGAN --}}
-<link rel="stylesheet" href="{{ asset('css/home.css') }}">
+  {{-- CSS SORANGAN --}}
+  <link rel="stylesheet" href="{{ asset('css/home.css') }}">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
   <!-- SweetAlert -->
@@ -78,24 +78,23 @@
 <div class="container-footer">
   <div class="row">
     <!-- Social media -->
-    <div class="col-12 row text-center">
-      <span><i class="fab fa-instagram" style="font-size:24px" aria-hidden="true"></i></span>
-      <span><i class="fab fa-instagram" style="font-size:24px" aria-hidden="true"></i></span>
-      <span><i class="fab fa-instagram" style="font-size:24px" aria-hidden="true"></i></span>
-      <span><i class="fab fa-instagram" style="font-size:24px" aria-hidden="true"></i></span>
+    <div class="col-12 text-center my-auto py-auto">
+      <span class="footer-icon"><i class="fab fa-facebook" aria-hidden="true"></i></span>
+      <span class="footer-icon"><i class="fab fa-instagram" aria-hidden="true"></i></span>
+      <span class="footer-icon"><i class="fab fa-linkedin" aria-hidden="true"></i></span>
+      <span class="footer-icon"><i class="fab fa-youtube" aria-hidden="true"></i></span>
     </div>
     <!-- Term and Condition -->
-    <div class="col-12 text-center">
-      <b class="text-white">Term of Use &bull; Privacy Policy</b>
+    <div class="col-12 mt-4 text-center">
+      <b class="footer-term-condition">Term of Use &bull; Privacy Policy</b>
     </div>
     <!-- Copyright -->
-    <div class="col-12 text-center">
-      <b class="text-white">&copy; 2020 Teman Warung</b>
+    <div class="col-12 mt-2 text-center">
+      <p class="footer-copyright">&copy; 2020 Teman Warung</p>
     </div>
   </div>
 </div>
 {{-- End of Footer --}}
-
 
 <!-- jQuery -->
 <script src="{{ asset('js/jquery-3.5.1.js') }}"></script>
