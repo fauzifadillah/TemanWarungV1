@@ -12,108 +12,100 @@ class FurnitureSeeder extends Seeder
     public function run()
     {
         DB::table('products')->insert([
-            'name' => 'Changhong 2463 24 inch',
+            'name' => 'Etalase 1,5 M',
             'categories_id' => 10,
-            'price' => 210000+1099000,
-            'price3' => 436333,
-            'price6'=> 218167,
-            'price12' => 109083
+            'price' => 210000+1159999,
+            'price3' => 456666,
+            'price6'=> 228333,
+            'price12' => 114167
         ]);
         DB::table('products')->insert([
-            'name' => 'Polytron 20D 22 inch',
+            'name' => 'Lemari rak piring magic com polos 3 pintu',
             'categories_id' => 10,
-            'price' => 210000+1195000,
-            'price3' => 468333,
-            'price6'=> 234167,
-            'price12' => 117083
+            'price' => 140000+729999,
+            'price3' => 290000,
+            'price6'=> 145000,
+            'price12' => 72500
         ]);
         DB::table('products')->insert([
-            'name' => 'TCL 24D 310 24 inch',
+            'name' => 'Lemari rak piring fullbox jumbo 3 pt',
             'categories_id' => 10,
-            'price' => 210000+1205000,
-            'price3' => 471667,
-            'price6'=> 235833,
-            'price12' => 117917
+            'price' => 140000+779999,
+            'price3' => 306666,
+            'price6'=> 153333,
+            'price12' => 76667
         ]);
         DB::table('products')->insert([
-            'name' => 'Polytron 24T8511 24 inch',
+            'name' => 'Lemari rak piring polos 2 pintu',
             'categories_id' => 10,
-            'price' => 210000+1415000,
-            'price3' => 541667,
-            'price6'=> 270833,
-            'price12' => 135417
+            'price' => 140000+629999,
+            'price3' => 256666,
+            'price6'=> 128333,
+            'price12' => 64167
         ]);
         DB::table('products')->insert([
-            'name' => 'AQUA 32AQT6100 32 inch',
+            'name' => 'Etalase 2 M',
             'categories_id' => 10,
-            'price' => 210000+1499000,
-            'price3' => 569667,
-            'price6'=> 284833,
-            'price12' => 142417
+            'price' => 210000+1459999,
+            'price3' => 556666,
+            'price6'=> 278333,
+            'price12' => 139167
         ]);
         DB::table('products')->insert([
-            'name' => 'Changhong 3263 32 inch',
+            'name' => 'Etalase 1 M',
             'categories_id' => 10,
-            'price' => 210000+1575000,
-            'price3' => 595000,
-            'price6'=> 297500,
-            'price12' => 148750
+            'price' => 140000+929999,
+            'price3' => 356666,
+            'price6'=> 178333,
+            'price12' => 89167
         ]);
         DB::table('products')->insert([
-            'name' => 'TCL 32D310 32 inch',
+            'name' => 'Etalase 1,2 M',
             'categories_id' => 10,
-            'price' => 210000+1625000,
-            'price3' => 1011667,
-            'price6'=> 305833,
-            'price12' => 152917
+            'price' => 210000+1159999,
+            'price3' => 456666,
+            'price6'=> 228333,
+            'price12' => 114167
         ]);
         DB::table('products')->insert([
-            'name' => 'TCL 32D3000B 32 inch',
+            'name' => 'Kursi Plastik Motif Rotan Napolly-3R3',
             'categories_id' => 10,
-            'price' => 210000+1639000,
-            'price3' => 1016333,
-            'price6'=> 308167,
-            'price12' => 154083
+            'price' => 22950+37000,
+            'price3' => 19983,
         ]);
         DB::table('products')->insert([
-            'name' => 'Samsung UA32N4001AK 32 inch',
+            'name' => 'Kursi Baso Napolly BIG 303',
             'categories_id' => 10,
-            'price' => 210000+1825000,
-            'price3' => 1078333,
-            'price6'=> 339167,
-            'price12' => 169583
+            'price' => 24000+40000,
+            'price3' => 21333,
+
         ]);
         DB::table('products')->insert([
-            'name' => 'Sharp 32c32b 32 inch',
+            'name' => 'Kursi plastik Olymplast 508',
             'categories_id' => 10,
-            'price' => 210000+1890000,
-            'price3' => 700000,
-            'price6'=> 350000,
-            'price12' => 175000
+            'price' => 115000+60000,
+            'price3' => 58333,
+
         ]);
         DB::table('products')->insert([
-            'name' => 'LG LK 500 32 inch',
+            'name' => 'Kursi baso rotan olimplast',
             'categories_id' => 10,
-            'price' => 210000+1925000,
-            'price3' => 711667,
-            'price6'=> 355833,
-            'price12' => 177917
+            'price' => 22500+35000,
+            'price3' => 19083,
         ]);
         DB::table('products')->insert([
-            'name' => 'LG LM 550 32 inch',
+            'name' => 'Meja olimplast OCTR',
             'categories_id' => 10,
-            'price' => 210000+1925000,
-            'price3' => 711667,
-            'price6'=> 355833,
-            'price12' => 177917
+            'price' => 43215+94900,
+            'price3' => 46038,
+
         ]);
         DB::table('products')->insert([
-            'name' => 'Xiaomi Mi 4A 32 inch',
+            'name' => 'Meja olymplast OSTR',
             'categories_id' => 10,
-            'price' => 210000+1999000,
-            'price3' => 736333,
-            'price6'=> 368167,
-            'price12' => 184083
+            'price' => 60000+140000,
+            'price3' => 66667,
+
         ]);
     }
 }
