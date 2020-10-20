@@ -56,7 +56,7 @@ class PerabotSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Jemuran aluminium 180/9 + hanger',
             'categories_id' => 12,
-            'image' => '/katalog/perabot/Jemuran-aluminium-180/9+hanger.jpg',
+            'image' => '/katalog/perabot/Jemuran-aluminium-180:9+hanger.jpg',
             'price' => 60000+199999,
             'price3'=>86666
         ]);

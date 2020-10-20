@@ -92,7 +92,7 @@ class FurnitureSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Kursi plastik Olymplast 508',
             'categories_id' => 10,
-            'image' => '/katalog/furnitur/',
+            'image' => '/katalog/furnitur/Kursi-plastik-Olymplast-508.jpeg',
             'price' => 115000+60000,
             'price3' => 58333,
 
