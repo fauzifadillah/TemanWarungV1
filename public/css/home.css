@@ -57,7 +57,7 @@
   color: #195ddd !important;
 }
 
-.category:focus {
+.active-image {
   border: 10px solid #5288f4;
   border-radius: 10px;
 }
@@ -73,11 +73,15 @@ td {
 }
 
 @media only screen and (max-width: 480px) {
+  .card-body {
+    padding: 0.25rem !important;
+  }
+
   .image-detail {
     width: 80px;
   }
 
-  .category:focus {
+  .active-image {
     border: 8px solid #5288f4;
   }
 

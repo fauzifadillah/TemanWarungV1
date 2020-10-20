@@ -73,6 +73,14 @@
 <script src="{{ asset('js/sweetalert2.all.js') }}"></script>
 @include('layouts.modal')
 <script>
+
+  $(function() {                       //run when the DOM is ready
+    $(".category").click(function() {  //use a class, since your ID gets mangled
+      $(".category.active-image").removeClass("active-image");
+      $(this).addClass("active-image");      //add the class to the clicked element
+    });
+  });
+
   $('body').on('click', '.modal-show', function(event){
     event.preventDefault();
 
