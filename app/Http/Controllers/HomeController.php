@@ -66,6 +66,9 @@ class HomeController extends Controller
         if($model->installment==3){
             $price = 'Rp '.number_format($product->price3, 0, ',', '.');
         }
+        else if($model->installment==1){
+            $price = 'Rp '.number_format($product->price, 0, ',', '.');
+        }
         else if($model->installment==6){
             $price = 'Rp '.number_format($product->price6, 0, ',', '.');
         }

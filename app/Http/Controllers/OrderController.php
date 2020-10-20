@@ -88,6 +88,9 @@ class OrderController extends Controller
             ->addColumn('price', function($model){
             	if($model->installment==0){
 	            	return 'Rp '.number_format($model->products->price, 0, ',', '.');
+                }
+                else if($model->installment==1){
+	            	return 'Rp '.number_format($model->products->price, 0, ',', '.');
             	}
             	else if($model->installment==3){
 	            	return 'Rp '.number_format($model->products->price3, 0, ',', '.');
