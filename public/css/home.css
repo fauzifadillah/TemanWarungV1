@@ -1,3 +1,36 @@
+/* Teman Warung Styling */
+.logo-temanwarung {
+  margin-right: auto;
+  margin-left: 60px;
+}
+
+.hashtag-temanwarung {
+  margin-left: auto;
+  margin-right: 60px;
+}
+
+.border-temanwarung {
+  border-top: 3px solid #195ddd;
+  border-radius: 10px;
+}
+
+.btn-primary-temanwarung {
+  background-image: linear-gradient(to bottom right, #195ddd, #5288f4);
+  color: #ffffff !important;
+}
+
+.btn-secondary-temanwarung {
+  background: #fff;
+  color: #195ddd !important;
+  border: 1px solid #195ddd !important;
+}
+
+.text-blue-temanwarung {
+  color: #195ddd !important;
+}
+/* End of Teman Warung Styling */
+
+
 .header-section {
   color: white;
   background-image: linear-gradient(to bottom right, #195ddd, #5288f4);
@@ -23,52 +56,31 @@
   top: 75px;
 }
 
-.logo-temanwarung {
-  margin-right: auto;
-  margin-left: 60px;
-}
-
-.hashtag-temanwarung {
-  margin-left: auto;
-  margin-right: 60px;
-}
-
 .image-detail {
-  width: 200px;
-}
-
-.border-temanwarung {
-  border-top: 3px solid #195ddd;
-  border-radius: 10px;
-}
-
-.btn-primary-temanwarung {
-  background-image: linear-gradient(to bottom right, #195ddd, #5288f4);
-  color: #ffffff !important;
-}
-
-.btn-secondary-temanwarung {
-  background: #fff;
-  color: #195ddd !important;
-  border: 1px solid #195ddd !important;
-}
-
-.text-blue-temanwarung {
-  color: #195ddd !important;
+  width: 100%;
 }
 
 .active-image {
-  border: 10px solid #5288f4;
-  border-radius: 10px;
+  border-left: 2px solid #5288f4;
+  border-right: 2px solid #5288f4;
+  /* border-radius: 10px; */
 }
 
 td {
-  padding-top: 10px;
+  padding: 20px;
+}
+
+.page-title {
+  width: 200px;
+  padding-top: 50px;
 }
 
 @media only screen and (max-width: 768px) {
   .image-detail {
-    width: 150px;
+    padding: 10px;
+  }
+  td {
+    padding: 10px;
   }
 }
 
@@ -78,11 +90,8 @@ td {
   }
 
   .image-detail {
-    width: 80px;
-  }
-
-  .active-image {
-    border: 8px solid #5288f4;
+    width: 100%;
+    padding: 5px;
   }
 
   .logo-temanwarung {
@@ -95,10 +104,15 @@ td {
 
   td {
     font-size: 10px;
-    padding-top: 10px;
+    padding: 5px;
   }
 
   td a {
     font-size: 10px !important;
+  }
+
+  .page-title {
+    width: 100px;
+    padding-top: 30px;
   }
 }
