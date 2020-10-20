@@ -19,6 +19,7 @@
   <!-- SweetAlert -->
   <link rel="stylesheet" href="{{ asset('css/sweetalert2.css') }}">
   <!-- Font Awesome -->
+  <link rel="stylesheet" href="{{ asset('css/fontawesome.min.css') }}">
   <link rel="stylesheet" href="{{ asset('css/fontawesome.css') }}">
 </head>
     
@@ -78,10 +79,10 @@
   <div class="row">
     <!-- Social media -->
     <div class="col-12 row text-center">
-      <span><i class="fa fa-instagram" style="font-size:24px" aria-hidden="true"></i></span>
-      <span><i class="fa fa-instagram" style="font-size:24px" aria-hidden="true"></i></span>
-      <span><i class="fa fa-instagram" style="font-size:24px" aria-hidden="true"></i></span>
-      <span><i class="fa fa-instagram" style="font-size:24px" aria-hidden="true"></i></span>
+      <span><i class="fab fa-instagram" style="font-size:24px" aria-hidden="true"></i></span>
+      <span><i class="fab fa-instagram" style="font-size:24px" aria-hidden="true"></i></span>
+      <span><i class="fab fa-instagram" style="font-size:24px" aria-hidden="true"></i></span>
+      <span><i class="fab fa-instagram" style="font-size:24px" aria-hidden="true"></i></span>
     </div>
     <!-- Term and Condition -->
     <div class="col-12 text-center">
