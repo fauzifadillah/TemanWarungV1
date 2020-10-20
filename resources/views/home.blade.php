@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
   <!-- SweetAlert -->
   <link rel="stylesheet" href="{{ asset('css/sweetalert2.css') }}">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{{ asset('css/fontawesome.css') }}">
 </head>
     
 <!-- {{-- Header --}}
@@ -32,44 +34,66 @@
 </div>
 {{-- End of Header --}} -->
 
-  <div class="container">
-    <div class="row container-content">
-      <!-- Page Title -->
-      <div class="col-lg-12 text-center">
-        <img class="page-title" src="{{ asset('/tw_biru.png') }}">
-      </div>
-      <div class="col-lg-12 text-center">
-        <b>#SelaluAdaTeman</b>
-      </div>
-      <div class="col-lg-12">
-        <div class="card" >
-          <div class="card-body">
-            <table id="table" class="" style="width:100%">
-            <tbody>
-              @foreach($model as $a)
-              @if($a->id%3==0)
-                <td class="text-center">
-                  <a href="{{route('detail',$a->id)}}" class="category" id="{{($a->id)/3}}" name="{{$a->id}}"><img src="{{ asset($a->image) }}" class="image-detail"/></a>
-                </td>
-              </tr>
-              @elseif($a->id%3==1)
-              <tr id="{{($a->id+2)/3}}">
-                <td class="text-center">
-                  <a href="{{route('detail',$a->id)}}" class="category" id="{{($a->id+2)/3}}" name="{{$a->id}}"><img src="{{ asset($a->image) }}" class="image-detail"/></a>
-                </td>
-              @else
-                <td class="text-center">
-                  <a href="{{route('detail',$a->id)}}" class="category" id="{{($a->id+1)/3}}" name="{{$a->id}}"><img src="{{ asset($a->image) }}" class="image-detail"/></a>
-                </td>
-              @endif
-              @endforeach
-            </tbody>
-            </table>
-          </div>
+<div class="container">
+  <div class="row container-content">
+    <!-- Page Title -->
+    <div class="col-lg-12 text-center">
+      <img class="page-title" src="{{ asset('/tw_biru.png') }}">
+    </div>
+    <div class="col-lg-12 text-center">
+      <b>#SelaluAdaTeman</b>
+    </div>
+    <div class="col-lg-12">
+      <div class="card" >
+        <div class="card-body">
+          <table id="table" class="" style="width:100%">
+          <tbody>
+            @foreach($model as $a)
+            @if($a->id%3==0)
+              <td class="text-center">
+                <a href="{{route('detail',$a->id)}}" class="category" id="{{($a->id)/3}}" name="{{$a->id}}"><img src="{{ asset($a->image) }}" class="image-detail"/></a>
+              </td>
+            </tr>
+            @elseif($a->id%3==1)
+            <tr id="{{($a->id+2)/3}}">
+              <td class="text-center">
+                <a href="{{route('detail',$a->id)}}" class="category" id="{{($a->id+2)/3}}" name="{{$a->id}}"><img src="{{ asset($a->image) }}" class="image-detail"/></a>
+              </td>
+            @else
+              <td class="text-center">
+                <a href="{{route('detail',$a->id)}}" class="category" id="{{($a->id+1)/3}}" name="{{$a->id}}"><img src="{{ asset($a->image) }}" class="image-detail"/></a>
+              </td>
+            @endif
+            @endforeach
+          </tbody>
+          </table>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+{{-- Footer --}}
+<div class="container-footer">
+  <div class="row">
+    <!-- Social media -->
+    <div class="col-12 row text-center">
+      <span><i class="fa fa-instagram" style="font-size:24px" aria-hidden="true"></i></span>
+      <span><i class="fa fa-instagram" style="font-size:24px" aria-hidden="true"></i></span>
+      <span><i class="fa fa-instagram" style="font-size:24px" aria-hidden="true"></i></span>
+      <span><i class="fa fa-instagram" style="font-size:24px" aria-hidden="true"></i></span>
+    </div>
+    <!-- Term and Condition -->
+    <div class="col-12 text-center">
+      <b class="text-white">Term of Use &bull; Privacy Policy</b>
+    </div>
+    <!-- Copyright -->
+    <div class="col-12 text-center">
+      <b class="text-white">&copy; 2020 Teman Warung</b>
+    </div>
+  </div>
+</div>
+{{-- End of Footer --}}
 
 
 <!-- jQuery -->
@@ -78,6 +102,7 @@
 <script src="{{ asset('js/bootstrap.js') }}"></script>
 <!-- Sweet Alert 2 -->
 <script src="{{ asset('js/sweetalert2.all.js') }}"></script>
+
 @include('layouts.modal')
 <script>
 

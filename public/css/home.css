@@ -75,6 +75,11 @@ td {
   padding-top: 50px;
 }
 
+.container-footer {
+  margin-top: 50px;
+  background-image: linear-gradient(to bottom right, #195ddd, #5288f4);
+}
+
 @media only screen and (max-width: 768px) {
   .image-detail {
     padding: 10px;
