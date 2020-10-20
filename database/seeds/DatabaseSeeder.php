@@ -22,6 +22,9 @@ class DatabaseSeeder extends Seeder
     $this->call(BlenderSeeder::class);
     $this->call(KipasAnginSeeder::class);
     $this->call(KomporGasSeeder::class);
+    $this->call(RiceCookerSeeder::class);
+    $this->call(SetrikaSeeder::class);
+    $this->call(PerabotSeeder::class);
 
 
 
