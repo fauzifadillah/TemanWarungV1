@@ -16,14 +16,16 @@ Route::prefix('category')->group(function(){
 	Route::get('datatable', 'CategoryController@datatable')->name('category.data');
 });
 
-Route::prefix('product')->group(function(){
-	Route::get('/', 'ProductController@index')->name('product.index');
-	Route::get('create', 'ProductController@create')->name('product.create');
-	Route::post('store', 'ProductController@store')->name('product.store');
-	Route::get('edit/{id}', 'ProductController@edit')->name('product.edit');
-	Route::put('update/{id}', 'ProductController@update')->name('product.update');
-	Route::delete('delete/{id}', 'ProductController@delete')->name('product.delete');
-	Route::get('datatable', 'ProductController@datatable')->name('product.data');
+Route::group(['middleware' => 'auth'], function () {
+	Route::prefix('product')->group(function(){
+		Route::get('/', 'ProductController@index')->name('product.index');
+		Route::get('create', 'ProductController@create')->name('product.create');
+		Route::post('store', 'ProductController@store')->name('product.store');
+		Route::get('edit/{id}', 'ProductController@edit')->name('product.edit');
+		Route::put('update/{id}', 'ProductController@update')->name('product.update');
+		Route::delete('delete/{id}', 'ProductController@delete')->name('product.delete');
+		Route::get('datatable', 'ProductController@datatable')->name('product.data');
+	});
 });
 
 Route::prefix('order')->group(function(){
