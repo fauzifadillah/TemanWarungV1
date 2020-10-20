@@ -28,13 +28,13 @@ class HomeController extends Controller
     	elseif($bagi==0){
     		$row=$id/3;
     	}
-        $table = '<tr id="detail-product" class="row'.$row.' image'.$id.'"><td colspan="7"><div class="card-body bg-light"><table width="100%">';
+        $table = '<tr id="detail-product" class="row'.$row.' image'.$id.'"><td colspan="7"><div class="card-body border-temanwarung mt-4"><table width="100%">';
 		foreach($model as $a){
 			$table .= '<tr><td><img src="'.asset($a->image).'" width="20" height="20"/></td>';
 			$table .= '<td>'.$a->name.'</td>';
-			$table .= '<td>Rp '.number_format($a->price, 0, ',', '.').'</td>';
+			$table .= '<td class="font-weight-bold">Rp '.number_format($a->price, 0, ',', '.').'</td>';
 			$table .= '<td>'.$a->desc.'</td>';
-			$table .= '<td><a href="'.route('product',$a->id).'" class="btn btn-success btn-sm modal-show">Beli</a></td></tr>';
+			$table .= '<td><a href="'.route('product',$a->id).'" class="btn btn-primary-temanwarung btn-sm modal-show">Beli</a></td></tr>';
         }
         // dd($a);
 		$table .= '</table></div></td></tr>';

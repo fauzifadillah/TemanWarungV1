@@ -23,12 +23,11 @@
 {{-- Header --}}
 <div class="row mx-0 header-section">
   {{-- Logo TemanWarung --}}
-  <div class="col-auto py-0 pl-4 mr-auto">
+  <div class="col-auto logo-temanwarung">
     <img width="75" src="{{ asset('/twputih.png') }}">
   </div>
-  {{-- User Info --}}
-  <div class="col-auto py-0 pl-4 ml-auto">
-    <img width="75" src="{{ asset('/twputih.png') }}">
+  <div class="col-auto hashtag-temanwarung">
+    <b class="ml-4">#SelaluAdaTeman</b>
   </div>
 </div>
 {{-- End of Header --}}
@@ -42,18 +41,18 @@
             <tbody>
               @foreach($model as $a)
               @if($a->id%3==0)
-                <td class="text-center">
-                  <a href="{{route('detail',$a->id)}}" class="image-detail" id="{{($a->id)/3}}" name="{{$a->id}}"><img src="{{ asset($a->image) }}" width="200" height="200"/></a>
+                <td class="text-center pt-5">
+                  <a href="{{route('detail',$a->id)}}" class="category" id="{{($a->id)/3}}" name="{{$a->id}}"><img src="{{ asset($a->image) }}" class="image-detail"/></a>
                 </td>
               </tr>
               @elseif($a->id%3==1)
               <tr id="{{($a->id+2)/3}}">
-                <td class="text-center">
-                  <a href="{{route('detail',$a->id)}}" class="image-detail" id="{{($a->id+2)/3}}" name="{{$a->id}}"><img src="{{ asset($a->image) }}" width="200" height="200"/></a>
+                <td class="text-center pt-5">
+                  <a href="{{route('detail',$a->id)}}" class="category" id="{{($a->id+2)/3}}" name="{{$a->id}}"><img src="{{ asset($a->image) }}" class="image-detail"/></a>
                 </td>
               @else
-                <td class="text-center">
-                  <a href="{{route('detail',$a->id)}}" class="image-detail" id="{{($a->id+1)/3}}" name="{{$a->id}}"><img src="{{ asset($a->image) }}" width="200" height="200"/></a>
+                <td class="text-center pt-5">
+                  <a href="{{route('detail',$a->id)}}" class="category" id="{{($a->id+1)/3}}" name="{{$a->id}}"><img src="{{ asset($a->image) }}" class="image-detail"/></a>
                 </td>
               @endif
               @endforeach
@@ -186,7 +185,7 @@
     });
   });
 
-  $('.image-detail').on('click', function(){
+  $('.category').on('click', function(){
     event.preventDefault();
 
     var me = $(this),
