@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="{{ asset('css/sweetalert2.css') }}">
 </head>
     
-{{-- Header --}}
+<!-- {{-- Header --}}
 <div class="row mx-0 header-section">
   {{-- Logo TemanWarung --}}
   <div class="col-auto logo-temanwarung">
@@ -30,10 +30,17 @@
     <b class="ml-4">#SelaluAdaTeman</b>
   </div>
 </div>
-{{-- End of Header --}}
+{{-- End of Header --}} -->
+
   <div class="container">
-    
     <div class="row container-content">
+      <!-- Page Title -->
+      <div class="col-lg-12 text-center">
+        <img class="page-title" src="{{ asset('/tw_biru.png') }}">
+      </div>
+      <div class="col-lg-12 text-center">
+        <b>#SelaluAdaTeman</b>
+      </div>
       <div class="col-lg-12">
         <div class="card" >
           <div class="card-body">
@@ -41,17 +48,17 @@
             <tbody>
               @foreach($model as $a)
               @if($a->id%3==0)
-                <td class="text-center pt-5">
+                <td class="text-center">
                   <a href="{{route('detail',$a->id)}}" class="category" id="{{($a->id)/3}}" name="{{$a->id}}"><img src="{{ asset($a->image) }}" class="image-detail"/></a>
                 </td>
               </tr>
               @elseif($a->id%3==1)
               <tr id="{{($a->id+2)/3}}">
-                <td class="text-center pt-5">
+                <td class="text-center">
                   <a href="{{route('detail',$a->id)}}" class="category" id="{{($a->id+2)/3}}" name="{{$a->id}}"><img src="{{ asset($a->image) }}" class="image-detail"/></a>
                 </td>
               @else
-                <td class="text-center pt-5">
+                <td class="text-center">
                   <a href="{{route('detail',$a->id)}}" class="category" id="{{($a->id+1)/3}}" name="{{$a->id}}"><img src="{{ asset($a->image) }}" class="image-detail"/></a>
                 </td>
               @endif
@@ -76,7 +83,7 @@
 
   $(function() {                       //run when the DOM is ready
     $(".category").click(function() {  //use a class, since your ID gets mangled
-      $(".category.active-image").removeClass("active-image");
+      $(".category.active-image").removeClass("active-image")
       $(this).addClass("active-image");      //add the class to the clicked element
     });
   });
