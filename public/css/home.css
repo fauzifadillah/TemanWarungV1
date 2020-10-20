@@ -1,4 +1,7 @@
 /* Teman Warung Styling */
+body {
+  font-family: "Poppins" !important;
+}
 .logo-temanwarung {
   margin-right: auto;
   margin-left: 60px;
@@ -29,7 +32,6 @@
   color: #195ddd !important;
 }
 /* End of Teman Warung Styling */
-
 
 .header-section {
   color: white;
@@ -149,11 +151,11 @@ td {
     margin: 0 4px;
     height: 25px;
   }
-  
+
   .container-footer .footer-term-condition {
     font-size: 14px;
   }
-  
+
   .container-footer .footer-copyright {
     font-size: 12px;
   }
