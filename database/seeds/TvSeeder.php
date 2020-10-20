@@ -15,7 +15,7 @@ class TvSeeder extends Seeder
         DB::table('products')->insert([
             'name' => 'Changhong 2463 24 inch',
             'categories_id' => 6,
-            'image' => '/katalog/tv/Changhong-2463-24-inch .jpeg',
+            'image' => '/katalog/tv/Changhong-2463-24-inch.jpeg',
             'price' => 210000+1099000,
             'price3' => 436333,
             'price6'=> 218167,
