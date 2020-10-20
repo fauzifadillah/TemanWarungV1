@@ -31,7 +31,7 @@ class HomeController extends Controller
         $table = '<tr id="detail-product" class="row'.$row.' image'.$id.'"><td colspan="7"><div class="card-body border-temanwarung mt-4"><table class="table-hover" width="100%">';
 		foreach($model as $a){
 			$table .= '<tr><td style="width: 5%"><img src="'.asset($a->image).'" width="20" height="20"/></td>';
-			$table .= '<td>'.Str::limit($a->name,25,$end='...').'</td>';
+			$table .= '<td style="line-height: 0.75rem">'.Str::limit($a->name,25,$end='...').'</td>';
 			$table .= '<td style="width: 28%" class="font-weight-bold">Rp '.number_format($a->price, 0, ',', '.').'</td>';
 			$table .= '<td>'.$a->desc.'</td>';
 			$table .= '<td style="width: 5%"><a href="'.route('product',$a->id).'" class="btn btn-primary-temanwarung btn-sm modal-show">Beli</a></td></tr>';
