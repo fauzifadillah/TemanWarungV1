@@ -1,7 +1,7 @@
 <?php
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('/digital', 'HomeController@digitalIndex')->name('home'); // ppob
+Route::get('/digital', 'HomeController@digitalIndex')->name('digital'); // ppob
 Route::get('detail/{id}', 'HomeController@detail')->name('detail');
 Route::get('form/{id}', 'HomeController@product')->name('product');
 Route::post('confirm', 'HomeController@confirm')->name('confirm');

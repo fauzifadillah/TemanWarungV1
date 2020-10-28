@@ -54,7 +54,7 @@
   <div class="row container-content">
     <!-- Page Title -->
     <div class="col-lg-12 text-center">
-      <img class="page-title" src="{{ asset('/tw_biru.png') }}">
+      <a href="{{route('home')}}"><img class="page-title" src="{{ asset('/tw_biru.png') }}"></a>
     </div>
     <div class="col-lg-12 text-center">
       <b>#SelaluAdaTeman</b>
