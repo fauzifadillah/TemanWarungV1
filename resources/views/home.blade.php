@@ -47,7 +47,7 @@
   <marquee direction="" onmouseover="this.stop();" onmouseout="this.start();">
     <div class="holder">
          <div class="text-container">
-       &nbsp; &nbsp;&nbsp; <a data-fancybox-group="gallery" class="fancybox text-dark" href="/digital" title="THE ELECTRIC LIGHTING ACT: section 35">Baru! Produk Digital dari TemanWarung, klik disini sekarang!</a>
+       &nbsp; &nbsp;&nbsp; <a data-fancybox-group="gallery" class="fancybox text-dark" href="/digital" title="Produk Digital TemanWarung!">Baru! Produk Digital dari TemanWarung, klik disini sekarang!</a>
         </div>
     </div>
     </marquee>
