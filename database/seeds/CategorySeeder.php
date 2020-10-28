@@ -68,5 +68,22 @@ class CategorySeeder extends Seeder
 		    	'name' => 'LAPTOP/TABLET',
 					'image' => '/katalog/laptop.png'
 		]); 
+			// Digital Products
+		DB::table('categories')->insert([
+		  'name' => 'PULSA/DATA',
+			'image' => '/katalog/ppob/data.png'
+		]); 
+		DB::table('categories')->insert([
+			'name' => 'LISTRIK',
+			'image' => '/katalog/ppob/listrik.png'
+		]); 
+		DB::table('categories')->insert([
+			'name' => 'INTERNET',
+			'image' => '/katalog/ppob/internet.png'
+		]); 
+		DB::table('categories')->insert([
+			'name' => 'BPJS',
+			'image' => '/katalog/ppob/bpjs.png'
+		]);  
     }
 }

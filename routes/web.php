@@ -1,6 +1,7 @@
 <?php
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/digital', 'HomeController@digitalIndex')->name('home'); // ppob
 Route::get('detail/{id}', 'HomeController@detail')->name('detail');
 Route::get('form/{id}', 'HomeController@product')->name('product');
 Route::post('confirm', 'HomeController@confirm')->name('confirm');
@@ -38,3 +39,12 @@ Route::prefix('order')->group(function(){
 	Route::get('datatable', 'OrderController@datatable')->name('order.data');
 });
 
+Route::prefix('dashboard/v1')->group(function(){
+	Route::get('/', 'DashboardController@index')->name('dashboard.index');
+	Route::get('create', 'DashboardController@create')->name('dashboard.create');
+	Route::post('store', 'DashboardController@store')->name('dashboard.store');
+	Route::get('edit/{id}', 'DashboardController@edit')->name('dashboard.edit');
+	Route::put('update/{id}', 'DashboardController@update')->name('dashboard.update');
+	Route::delete('delete/{id}', 'DashboardController@delete')->name('dashboard.delete');
+	Route::get('datatable', 'DashboardController@datatable')->name('dashboard.data');
+});

@@ -9,9 +9,15 @@ use Illuminate\Http\Request;
 use Str;
 class HomeController extends Controller
 {
+    public function digitalIndex() // Digital Product
+    {
+    	$model = Category::where('id', '>','14')->get();
+        return view('digital', ['model'=>$model]);
+    }
+
     public function index()
     {
-    	$model = Category::get();
+    	$model = Category::where('id', '<','14')->get();
         return view('home', ['model'=>$model]);
     }
 

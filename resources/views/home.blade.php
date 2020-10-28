@@ -37,8 +37,47 @@
 <link rel="stylesheet" href="{{ asset('css/jquery.fancybox.min.css') }}" />
 <script src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
 </head>
-    
-<!-- {{-- Header --}}
+
+{{-- Navbar Start --}}
+<nav class="navbar navbar-dark bg-warning my-0">
+  {{-- <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> --}}
+  <marquee direction="" onmouseover="this.stop();" onmouseout="this.start();">
+    <div class="holder">
+         <div class="text-container">
+       &nbsp; &nbsp;&nbsp; <a data-fancybox-group="gallery" class="fancybox text-dark" href="/digital" title="THE ELECTRIC LIGHTING ACT: section 35">Baru! Produk Digital dari TemanWarung, klik disini sekarang!</a>
+        </div>
+    </div>
+    </marquee>
+  {{-- <div class="navbar-collapse collapse" id="navbarsExample01" style="">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-md-0">
+      <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+    </form>
+  </div> --}}
+</nav>    
+{{-- Navbar End --}}
+<!-- Header 
 <div class="row mx-0 header-section">
   {{-- Logo TemanWarung --}}
   <div class="col-auto logo-temanwarung">
@@ -94,10 +133,10 @@
   <div class="row">
     <!-- Social media -->
     <div class="col-12 text-center my-auto py-auto">
-      <span class="footer-icon"><i class="fab fa-facebook" aria-hidden="true"></i></span>
-      <span class="footer-icon"><i class="fab fa-instagram" aria-hidden="true"></i></span>
-      <span class="footer-icon"><i class="fab fa-linkedin" aria-hidden="true"></i></span>
-      <span class="footer-icon"><i class="fab fa-youtube" aria-hidden="true"></i></span>
+      {{-- <a href="https://temanwarung.id"><span class="footer-icon" ><i class="fab fa-facebook" aria-hidden="true"></i></span></a> --}}
+      <a href="https://instagram.com/temanwarung"><span class="footer-icon"><i class="fab fa-instagram" aria-hidden="true"></i></span></a>
+      <a href="https://linkedin.com/company/temanwarung"><span class="footer-icon"><i class="fab fa-linkedin" aria-hidden="true"></i></span></a>
+      {{-- <a href="https://temanwarung.id"><span class="footer-icon"><i class="fab fa-youtube" aria-hidden="true"></i></span></a> --}}
     </div>
     <!-- Term and Condition -->
     <div class="col-12 mt-4 text-center">
@@ -106,6 +145,7 @@
     <!-- Copyright -->
     <div class="col-12 mt-2 text-center">
       <p class="footer-copyright">&copy; 2020 Teman Warung</p>
+      <p class="footer-copyright">Server rendered in: {{ number_format( (microtime(true) - LARAVEL_START),3) }} sec.</p>
     </div>
   </div>
 </div>

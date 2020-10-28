@@ -27,6 +27,10 @@ class DatabaseSeeder extends Seeder
     $this->call(PerabotSeeder::class);
     $this->call(FurnitureSeeder::class);
     $this->call(DispenserSeeder::class);
+    $this->call(PulsaSeeder::class);
+    $this->call(ListrikSeeder::class);
+    $this->call(InternetSeeder::class);
+    $this->call(BPJSSeeder::class);
 
 
 
