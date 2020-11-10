@@ -67,6 +67,13 @@ class KomporGasSeeder extends Seeder
             'price' => 348888+60000,
             'price3' =>136296
         ]);
+        DB::table('products')->insert([
+            'name' => 'Elpiji 3kg',
+            'categories_id' => 9,
+            'image' => '/katalog/gas/lpg3.jpeg',
+            'price' => 159000+20000,
+            'price3' =>
+        ]);
 
     }
 }
