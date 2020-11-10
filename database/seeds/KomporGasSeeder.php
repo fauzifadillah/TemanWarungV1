@@ -72,7 +72,6 @@ class KomporGasSeeder extends Seeder
             'categories_id' => 9,
             'image' => '/katalog/gas/lpg3.jpeg',
             'price' => 159000+20000,
-            'price3' =>
         ]);
 
     }
